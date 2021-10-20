@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 리스트 페이지</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="headerArea">
+        <header id="header" class="flex-container">
+            <div id="headerLogoArea">
+                <img src="images/headerLogo.png" alt="logo" width="128">
+            </div>
+            <!-- duv#headerLogoArea -->
+
+            <div id="headerMenuArea">
+                <nav id="headerLnb">
+                    <ul id="headerLnbMainMenu" class="flex-container">
+                        <li class="headerLnbMainLi"><a href="#">ORDER</a></li>
+                        <li class="headerLnbMainLi"><a href="#">LOGIN</a></li>
+                        <li class="headerLnbMainLi"><a href="#">JOIN</a></li>
+                    </ul>
+                </nav>
+                <!-- nav#headerLnb -->
+
+                <div id="cartNlistMenu" class="flex-container">
+                    <div id="cartLink">
+                        <span id="cartGoodsCnt">0</span>
+                    </div>
+
+                    <div id="sideMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- div#cartNlist -->
+            </div>
+            <!-- div#headerMenuArea -->
+        </header>
+        <!-- header#header -->
+    </div>
+    <!-- div#headerArea -->
+
+    <div id="wrap">
+        <div id="goodsPart">
+            All
+        </div>
+
+        <main id="galleryListArea" class="flex-container">
+
+            <table class='goodsTbl'>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src='' alt='' width='320'>
+                        </td>
+                        <!-- 상품이미지 -->
+                    </tr>
+                    <tr>
+                        <td class='goodsName'></td>
+                        <!-- 상품명 -->
+                    </tr>
+                    <tr>
+                        <td class='goodsDesc'></td>
+                        <!-- 상품설명 -->
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class='goodsPrice numComma'></span>
+                            <!-- 기본판매가격 -->
+                            <span class='salePrice numComma'></span>
+                            <!-- 할인가격 -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class='replyCnt numComma'>0</span></td>
+                        <!-- 댓글 수 -->
+                    </tr>
+                </tbody>
+            </table>
+            <!-- table.goodsTbl -->
+        </main>
+        <!-- main#galleryListArea -->
+
+        <div id="pagingArea" class="flex-container">
+            <div class="pageBox"><a href="#"><img src="images/btn_first.gif" alt="" width="34" height="34"></a></div>
+            <div class="pageBox"><a href="#"><img src="images/btn_prev.gif" alt="" width="34" height="34"></a></div>
+            <div id="pageNumArea" class="flex-container">
+                <div class="pageBox pageNum nowPage"><a href="#">1</a></div>
+                <div class="pageBox pageNum"><a href="#">2</a></div>
+            </div>
+            <div class="pageBox"><a href="#"><img src="images/btn_next.gif" alt="" width="34" height="34"></a></div>
+            <div class="pageBox"><a href="#"><img src="images/btn_last.gif" alt="" width="34" height="34"></a></div>
+
+        </div>
+        <!-- div#pagingArea -->
+    </div>
+    <!-- div#wrap -->
+    
+    <script src="script/jquery-3.6.0.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- table>tbody>tr*5>td -->  
+<table class="goodsTbl">
+    <tbody>
+        <tr>
+            <td><img src="images/img01.jpg" width="320" alt=""></td>
+        </tr>
+        <!-- 상품 이미지 -->
+        <tr>
+            <td class="goodsName">헤리터 시그니처 칼도마세트 (월넛)</td>
+        </tr>
+        <!-- 상품명 -->
+        <tr>
+            <td class="goodsDesc">월넛 색상의 헤리터 식과도&도마 세트</td>
+        </tr>
+        <!-- 상품 설명 -->
+        <tr>
+            <td>
+                <span class="goodsPrice numComma">355000</span>
+                <span class="salePrice numComma">298000</span>
+                <!-- numComma : 천단위 구분 쉼표 -->
+            </td>
+        </tr>
+        <!-- 기본 판매 가격 / 할인 가격 -->
+        <tr>
+            <td><span class="replyCnt numComma">0</span></td>
+        </tr>
+        <!-- 댓글 수 -->
+    </tbody>
+</table>

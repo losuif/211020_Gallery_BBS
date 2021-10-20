@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url(resetCss.css);
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* div#headerArea 시작 */
+div#headerArea {
+    background-color: #f1e7d5;
+    margin-bottom: 48px;
+
+	width: 100%;
+	position: sticky;
+	left: 0;
+	top: 0;
+}
+
+header#header {
+    width: 1008px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#headerArea #headerLogoArea {
+    margin-top: 66px;
+}
+
+#headerMenuArea #headerLnb {
+    margin: 16px 0;
+}
+
+#headerMenuArea #headerLnb #headerLnbMainMenu li a {
+    margin: 0 6px;
+    font-size: 12px;
+    font-family: 'Cabin', sans-serif;
+    color: #5f4a38;
+}
+
+#cartNlistMenu {
+    justify-content: space-between;
+    align-items: center;  
+    margin: 31px 0 38px;
+}
+
+#cartNlistMenu #cartLink {
+    background-image: url(../images/btn_cart.png);
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 36px;
+    background-size: 48px 36px;
+    margin: 0 18px;
+    background-position: center;
+}
+
+#cartNlistMenu #cartLink span#cartGoodsCnt {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border: 1px solid #0024ff;
+    border-radius: 50%;
+    background-color: #0024ff;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 13px;
+}
+
+#cartNlistMenu #sideMenu {
+    width: 40px;
+    height: 40px;
+}
+
+div#sideMenu span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #5f4a38;
+    margin: 10px 0;
+}
+
+div#sideMenu span:nth-child(2) {
+    width: 70%;
+}
+
+div#sideMenu span:nth-child(3) {
+    width: 40%;
+}
+/* div#headerArea 끝 */
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1008px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+div#wrap #goodsPart {
+    color: #5f4a38;
+    font-size: 19px;
+    font-family: batang, sans-serif;
+    margin-bottom: 36px;
+}
+
+/* main#galleryListArea 시작 */
+main#galleryListArea {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+main#galleryListArea table {
+    text-align: center;
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+main#galleryListArea table td {
+	color: #5f4a38;
+	padding: 3px 0;
+}
+
+/* table.goodsTbl 시작 */
+main#galleryListArea table td.goodsDesc {
+	/* 상품 설명 */
+	font-size: 12px;
+	color: #9c836c;
+}
+
+main#galleryListArea table td span.goodsPrice {
+	/* 기본 판매 가격 */
+	text-decoration: line-through;
+	font-size: 14px;
+	color: #9c836c;
+	margin-right: 4px;
+}
+
+main#galleryListArea table td span.salePrice {
+	/* 할인 판매 가격 */
+	color: #715844;
+	font-weight: bold;
+}
+
+main#galleryListArea table td span.goodsPrice::after,
+main#galleryListArea table td span.salePrice::after {
+	content: "원";
+}
+
+main#galleryListArea table td span.replyCnt {
+	/* 댓글 수 */
+	width: 82px;
+	height: 19px;
+	display: inline-block;
+	color: #715844;
+	font-size: 12px;
+	line-height: 20px;
+	border-radius: 8px;
+	background-color: #f1e7d5;
+}
+
+main#galleryListArea table td span.replyCnt::before {
+	content: "RE: ";
+}
+/* table.goodsTbl 끝 */
+/* main#galleryListArea 끝 */
+
+/* div#pagingArea 시작 */
+div#pagingArea {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+div#pagingArea div.pageBox {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+
+div#pagingArea div.pageBox a {
+	width: 100%;
+	height: 100%;
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+#pagingArea div.pageNum {
+	border: 1px solid #ccc;
+    transform: translateY(3px);
+}
+
+div#pagingArea div.pageBox:not(:last-child){
+    border-right: none;
+}
+
+div#pagingArea div.nowPage {
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+}
+
+#pagingArea div.pageNum:hover {
+    background-color: rgba(233, 233, 233, 0.4);
+}
+/* div#pagingArea 끝 */
+/* div#wrap 끝 */
